@@ -1,0 +1,79 @@
+.navbar{
+    background-color: #6f42c1;
+}
+
+:root {
+            --cor-principal: #6f42c1;
+        }
+
+        .custom-form-container {
+            border: 2px solid var(--cor-principal);
+            border-radius: 15px; 
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+        }
+
+        .custom-form-title {
+            color: var(--cor-principal);
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .custom-form-container .input-group-text {
+            background-color: #f8f9fa;
+            border-color: #dee2e6;
+            color: var(--cor-principal);
+            font-weight: 500;
+        }
+
+        
+        .btn-custom {
+            background-color: var(--cor-principal);
+            border-color: var(--cor-principal);
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #5a32a3; 
+            border-color: #5a32a3;
+            color: white;
+        }
+
+        .placeholder-light::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
+  }
+  
+  /* Efeito de linha embaixo dos links ao passar o mouse */
+  .nav-link {
+    position: relative;
+    transition: 0.3s;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transition: 0.3s;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+  .custom-about-container {
+    border: 2px solid #6f42c1;
+    border-radius: 15px;
+    background-color: #fff;
+    overflow: hidden; /* Garante que a imagem respeite o arredondamento */
+  }
+  
+  @media (max-width: 768px) {
+    .custom-about-container img {
+      border-radius: 15px 15px 0 0;
+    }
+  }
